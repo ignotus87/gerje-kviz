@@ -1,7 +1,3 @@
-//function myfunc(){
-//    alert(document.getElementById("language").value);
-//}
-
 var countQues = 0;
 var lang;
 var score = 0;
@@ -329,30 +325,16 @@ var Cquestions = [
 
 ];
 
-
-
-
-
-//alert(questions.length);
 document.getElementById("score").textContent = "Score : " + 0;
 document.querySelector(".view-results").style.display = "none";
 document.querySelector(".quiz").style.display = "none";
 document.querySelector(".final-result").style.display = "none";
-
-
-
-
-
-
-
 
 document.querySelector(".choose-lang").addEventListener("click", function () {
 
     lang = document.getElementById("language").value + "questions";
     document.getElementById("ques-left").textContent = "Question : " + (countQues + 1) + "/" + window[lang].length;
 
-    //    alert(window[lang].length);
-    //window["anything"] will convert "anything" string to object because window is also an object
     document.querySelector(".quiz").style.display = "block";
 
     document.querySelector(".question").innerHTML = "<h1>" + window[lang][countQues].question + "</h1>";
@@ -360,9 +342,7 @@ document.querySelector(".choose-lang").addEventListener("click", function () {
         document.getElementById("opt" + i).value = window[lang][countQues].choices[i];
         document.getElementById("lb" + i).innerHTML = window[lang][countQues].choices[i];
 
-    };/*For loop Closed*/
-
-    //    window.location.href="#score";
+    };
 
 });
 
@@ -371,8 +351,6 @@ document.querySelector(".choose-lang").addEventListener("click", function () {
 
 
 document.querySelector(".submit-answer").addEventListener("click", function () {
-    //     alert(window[lang][countQues].choices[window[lang][countQues].answer-1]);
-    //     alert(document.querySelector('input[name="options"]:checked').value);
 
     if (document.querySelector('input[name="options"]:checked').value === window[lang][countQues].choices[window[lang][countQues].answer - 1]) {
 
