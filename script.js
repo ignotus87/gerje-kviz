@@ -401,6 +401,7 @@ document.querySelector(".submit-answer").addEventListener("click", function () {
     for (i = 0; i <= 3; i++) {
         document.getElementById("opt" + i).value = window[lang][countQues].choices[i];
         document.getElementById("lb" + i).innerHTML = window[lang][countQues].choices[i];
+        document.getElementById("opt" + i).checked = false;
     };
 
 });
