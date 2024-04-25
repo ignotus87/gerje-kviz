@@ -2,7 +2,7 @@
 App url: https://ignotus87.github.io/gerje-kviz/
 
 # Language
-Hungarian - js - html
+Hungarian - js - html - css
 
 # Development
 
