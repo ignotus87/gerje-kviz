@@ -240,10 +240,12 @@ input[type=radio] {
 
 footer {
     text-align: center;
-    margin-top: 80%;
     color: gray;
     font-family: sans-serif;
     font-weight: lighter;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
     footer a {
