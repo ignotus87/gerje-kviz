@@ -9,5 +9,8 @@ Hungarian - js - html - css
 Install `http-server` with `npm`.
 Then start in the command line with the command `http-server -p 8080`
 
+# Improvements needed
+- prevent selection of option texts
+
 # Credits for the template
 The template created by [ceodigvijay](https://github.com/ceodigvijay/quiz-template-html-css-js) was applied.
