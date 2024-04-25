@@ -145,6 +145,7 @@ nav {
     font-weight: 100;
     margin-top: 30px;
     text-align: left;
+    white-space: nowrap;
 }
 
 input[type=radio] {
@@ -296,4 +297,8 @@ footer {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.choice-wrapper {
+    display: inline-block;
 }
